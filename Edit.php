@@ -26,6 +26,17 @@ if (isset($_POST["Edit"])) {
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css?v=1.1">
     <title>Document</title>
+    <style>
+        input{
+            width: 400px !important;
+        }
+        button{
+            width: 300px !important;
+        }
+        .main{
+            margin-top: 150px;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -52,21 +63,6 @@ if (isset($_POST["Edit"])) {
         <div class="mb-3">
             <label for="balance" class="form-label">Balance</label>
             <input type="number" name="Editbalance" id="balance" class="form-control" placeholder="Balance" required>
-        </div>
-
-        <div class="mb-3 overdraftLimit1" style="display:none">
-            <label for="overdraftLimit" class="form-label">Overdraft Limit</label>
-            <input class="overdraftLimit form-control" type="number" placeholder="Overdraft Limit" name="Editval1">
-        </div>
-
-        <div class="mb-3 interestRate1" style="display:none">
-            <label for="interestRate" class="form-label">Interest Rate</label>
-            <input class="interestRate form-control" type="number" placeholder="Interest Rate" name="Editval2">
-        </div>
-
-        <div class="mb-3 transactionFee1" style="display:none">
-            <label for="transactionFee" class="form-label">Transaction Fee</label>
-            <input class="transactionFee form-control" type="number" placeholder="Transaction Fee" name="Editval3">
         </div>
 
         <button type="submit" name="Edit" class="btn btn-primary" style="background-color:chartreuse; border:yellow;width:100px">

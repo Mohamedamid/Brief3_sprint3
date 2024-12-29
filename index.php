@@ -73,7 +73,7 @@ if (isset($_GET["idDelet"])) {
 
             <div class="mb-3">
                 <label for="type_account" class="form-label">Account Type</label>
-                <select name="type_account" id="type_account" class="form-select">
+                <select name="type_account" id="type_account" class="form-select" required>
                     <option value="">-------------------</option>
                     <option value="currentaccount">Current Account</option>
                     <option value="savingaccount">Saving Account</option>
@@ -83,7 +83,7 @@ if (isset($_GET["idDelet"])) {
 
             <div class="mb-3 overdraftLimit1" style="display:none">
                 <label for="overdraftLimit" class="form-label">Overdraft Limit</label>
-                <input class="overdraftLimit form-control" type="number" placeholder="Overdraft Limit" name="val1">
+                <input class="overdraftLimit form-control" type="number" placeholder="Overdraft Limit" name="val1" required>
             </div>
 
             <div class="mb-3 interestRate1" style="display:none">
