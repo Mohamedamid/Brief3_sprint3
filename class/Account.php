@@ -3,7 +3,7 @@ class Account
 {
     protected $holderName;
     protected $balance;
-
+    
     public function __construct( $holdName, $bal )
     {
         $this->holderName = $holdName;
@@ -20,14 +20,6 @@ class Account
             $stmt->bindValue(':balance', $this->balance);
             if ($stmt->execute()) {
                 $id = $conn->lastInsertId();
-                // retunr $id
-
-                /*
-                $id = parent::ajouterCompte()
-                 $query1 = "INSERT INTO currentaccount (accountID,overdraftLimit) VALUES ($id,$val)";
-                    $stmt1 = $conn->prepare($query1);
-                    $stmt1->execute();
-                */
                 if($typeAcc === "currentaccount"){
                     $query1 = "INSERT INTO currentaccount (accountID,overdraftLimit) VALUES ($id,$val)";
                     $stmt1 = $conn->prepare($query1);
